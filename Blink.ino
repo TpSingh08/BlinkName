@@ -28,90 +28,66 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
+void dash() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(3000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+
+void dot() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+
+// First Name: TARUNPAL
+
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // T
-  delay(3000);                       
-  digitalWrite(LED_BUILTIN, LOW);    
+  // T
+  dash();
   delay(2000);
-  digitalWrite(LED_BUILTIN, HIGH);   // A
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(3000);
-  digitalWrite(LED_BUILTIN, LOW);   
+
+  // A
+  dot();
+  dash();
   delay(2000);
-  digitalWrite(LED_BUILTIN, HIGH);   // R
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(3000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);  
+
+  // R
+  dot();
+  dash();
+  dot();
   delay(2000);
-  digitalWrite(LED_BUILTIN, HIGH);   // U
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);   
-  delay(3000);                       
-  digitalWrite(LED_BUILTIN, LOW);    
+
+  // U
+  dot();
+  dot();
+  dash();
   delay(2000);
-  digitalWrite(LED_BUILTIN, HIGH);    // N
-  delay(3000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);  
+
+  // N
+  dash();
+  dot();
   delay(2000);
-  digitalWrite(LED_BUILTIN, HIGH);    // P
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(3000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(3000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);  
+
+  // P
+  dot();
+  dash();
+  dash();
+  dot();
   delay(2000);
-  digitalWrite(LED_BUILTIN, HIGH);   // A
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(3000);
-  digitalWrite(LED_BUILTIN, LOW); 
+
+  // A
+  dot();
+  dash();
   delay(2000);
-  digitalWrite(LED_BUILTIN, HIGH);   // L
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(3000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW); 
-  delay(2000);                       
+
+  // L
+  dot();
+  dash();
+  dot();
+  dot();
+  delay(2000);                   
 }
